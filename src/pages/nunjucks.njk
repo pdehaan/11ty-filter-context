@@ -1,0 +1,15 @@
+---
+title: Nunjucks page
+---
+
+<h1>{{ title }}</h1>
+
+<h2>this.ctx</h2>
+<pre>
+{{ null | getContext | inspect | safe }}
+</pre>
+
+<h2>this.getVariables()</h2>
+<pre>
+{{ null | getVariables | inspect | safe }}
+</pre>

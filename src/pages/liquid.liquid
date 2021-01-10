@@ -1,0 +1,17 @@
+---
+title: Liquidjs page
+---
+
+<h1>{{ title }}</h1>
+
+<h2>this.ctx</h2>
+<pre>
+{{ page | getContext | inspect | safe }}
+</pre>
+
+{% comment %}
+<h2>this.getVariables()</h2>
+<pre>
+{{ null | getVariables }}
+</pre>
+{% endcomment %}
